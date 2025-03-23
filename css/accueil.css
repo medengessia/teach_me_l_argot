@@ -1,4 +1,4 @@
-@import url("/navigation.css");
+@import url("../css/navigation.css");
 
 body {
     font-family: Arial, sans-serif;
@@ -47,6 +47,16 @@ header {
     font-size: 18px;
 }
 
+.resultList-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    margin-top: 30px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 /* -- Center main -- */
 main {
     display: grid;
@@ -54,7 +64,7 @@ main {
     gap: 5px;
     margin: 0;
     position: relative;
-    top: 500px;
+    top: 480px;
     left: -10px;
 }
 
