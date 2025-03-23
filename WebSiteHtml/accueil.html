@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="../WebSiteCss/accueil.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="../WebSitePicture/livres.jpeg" alt="Logo" class="logo">
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Rechercher..." class="search-bar">
+            <button id="search-button" class="search-button">🔍</button>
+            <div id="search-result"></div>
+            <div id="result-container"></div>
+        </div>
+        <div class="language-selector">
+            <label for="lang">🌍</label>
+            <select id="lang" class="language-dropdown">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <div class="paragraph-container-presentation">
+            <h2 class="paragraph-title-presentation">Bienvenue dans l'Argot</h2>
+            <p class="paragraph-content-presentation">
+                Contenu de la page, et explication du projet et du but de ce dernier
+            </p>
+        </div>
+        <div class="paragraph-container-find-word" data-url="repertory.html">
+            <h2 class="paragraph-title-find-word">Trouver un mot d'argot</h2>
+            <p class="paragraph-content-find-word">
+                Répertoire des mots d'argot souvent utilisés dans le sud de la France
+            </p>
+        </div>
+        <div class="paragraph-container-for-more" data-url="information.html">
+            <h2 class="paragraph-title-for-more">Pour plus de mots...</h2>
+            <p class="paragraph-content-for-more">
+                Répertoire des mots d'argot souvent utilisés dans le sud de la France
+            </p>
+        </div>
+    </main>
+
+    <!-- Link JavaScript -->
+    <script src="../js/accueil.js"></script>
+    <!-- <script>
+        document.getElementById("search-bar").addEventListener("keyup", function() {
+            let searchText = this.value.toLowerCase();
+            let items = document.querySelectorAll("#wordList li");
+
+            items.forEach(item => {
+                let text = item.textContent.toLowerCase();
+                
+                // Vérifie si le texte contient la recherche
+                if (text.includes(searchText)) {
+                    item.classList.remove("hidden");
+                    
+                    // Met en surbrillance le texte trouvé
+                    let regex = new RegExp(`(${searchText})`, "gi");
+                    item.innerHTML = item.textContent.replace(regex, "<span class='highlight'>$1</span>");
+                } else {
+                    item.classList.add("hidden");
+                }
+            });
+        });
+    </script> -->
+</body>
+</html>
