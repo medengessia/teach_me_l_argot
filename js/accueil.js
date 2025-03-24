@@ -41,7 +41,7 @@ async function search() {
         }
     }
 
-    if (allResults.length > 0) {
+    if (allResults.length > 0 && allResults.length < 2) {
         allResults.forEach(result => {
             let li = document.createElement("li");
             li.innerHTML = `${result.text}`;
