@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Overview</title>
     <link rel="stylesheet" href="../css/accueil.css">
 </head>
 
@@ -13,7 +13,7 @@
     <header>
         <img src="../picture/logo-transparent2.png" alt="Logo" class="logo">
         <div class="search-container">
-            <input type="text" id="search-bar" placeholder="Rechercher..." class="search-bar">
+            <input type="text" id="search-bar" placeholder="Search..." class="search-bar">
             <button onclick="search()" id="search-button" class="search-button">🔍</button>
         </div>
         <div class="resultList-container">
@@ -22,29 +22,29 @@
         <div class="language-selector">
             <label for="lang">🌍</label>
             <select id="lang" class="language-dropdown" onchange="changeLanguage()">
-                <option value="accueil.html">Français</option>
-                <option value="overview.html">Anglais</option>
+                <option value="overview.html">English</option>
+                <option value="accueil.html">French</option>
             </select>
         </div>
     </header>
 
     <main>
         <div class="paragraph-container-presentation">
-            <h2 class="paragraph-title-presentation">Bienvenue sur Teach me l'argot !</h2>
+            <h2 class="paragraph-title-presentation">Welcome to Teach me l'argot !</h2>
             <p class="paragraph-content-presentation">
-                Envie de comprendre et d'utiliser l'argot français ? Ce site est fait pour toi ! On te guide à travers les mots et expressions d'argot , selon ton niveau et les situations où tu les entendras. Que tu sois débutant ou déjà à l’aise en français, tu vas découvrir l’argot de manière simple et pratique.
+                Want to understand and use French slang? This site is for you! We'll guide you through slang words and expressions based on your level and the situations where you'll hear them. Whether you're a beginner or already comfortable in French, you'll discover slang in a simple and practical way.
             </p>
         </div>
         <div class="paragraph-container-find-word" data-url="repertory.html">
             <h2 class="paragraph-title-find-word">Trouver un mot d'argot</h2>
             <p class="paragraph-content-find-word">
-                Répertoire des mots d'argot souvent utilisés dans le sud de la France
+                Directory of slang words often used in the south of France
             </p>
         </div>
         <div class="paragraph-container-for-more" data-url="information.html">
-            <h2 class="paragraph-title-for-more">Pour plus de mots...</h2>
+            <h2 class="paragraph-title-for-more">For more words...</h2>
             <p class="paragraph-content-for-more">
-                Répertoire des mots d'argot souvent utilisés dans le sud de la France
+                Directory of slang words often used in the south of France
             </p>
         </div>
     </main>

@@ -48,6 +48,14 @@ async function search() {
             resultList.appendChild(li); 
         });
     } else {
-        resultList.innerHTML = "<li>Aucun resultat trouvé</li>";
+        const currentLang = document.documentElement.lang;
+        resultList.innerHTML = currentLang === "fr"
+        ? "<li>Aucun résultat trouvé</li>"
+        : "<li>No result found</li>";
     }
+}   
+
+async function changeLanguage() {
+    var lang = document.getElementById("lang").value;
+    window.location.href = lang;
 }
