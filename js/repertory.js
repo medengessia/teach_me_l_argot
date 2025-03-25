@@ -57,3 +57,8 @@ fetch('list6.html')
         document.getElementById('container6-list').innerHTML = data;
         attachSearchFunctionality();
 });
+
+async function changeLanguage() {
+    var lang = document.getElementById("lang").value;
+    window.location.href = lang;
+}

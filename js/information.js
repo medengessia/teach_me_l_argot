@@ -14,3 +14,8 @@ document.addEventListener('click', (event) => {
         window.location.href = url;
     }
 });
+
+async function changeLanguage() {
+    var lang = document.getElementById("lang").value;
+    window.location.href = lang;
+}

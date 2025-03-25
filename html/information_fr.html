@@ -14,13 +14,13 @@
         <img src="../picture/logo-transparent2.png" alt="Logo" class="logo">
         <nav class="nav-menu">
             <button data-url="accueil.html" class="accueil-button">ACCUEIL</button>
-            <button data-url="repertory.html" class="repertory-button">REPERTOIRE</button>
+            <button data-url="repertoire.html" class="repertory-button">RÉPERTOIRE</button>
         </nav>
         <div class="language-selector">
             <label for="lang">🌍</label>
-            <select id="lang" class="language-dropdown">
-                <option value="fr">Français</option>
-                <option value="en">English</option>
+            <select id="lang" class="language-dropdown" onchange="changeLanguage()">
+                <option value="information_fr.html">Français</option>
+                <option value="information_en.html">Anglais</option>
             </select>
         </div>
     </header>
@@ -28,9 +28,9 @@
     <main>
         <div class="argots-sentence">
             <p class="title-argot">Proposition d'argot</p>
-            <input type="text" placeholder="Argots..." class="argots-bar">
+            <input type="text" placeholder="Argot..." class="argots-bar">
             <input type="text" placeholder="Traduction..." class="traduction-bar">
-            <input type="text" placeholder="Context" class="context-bar">
+            <input type="text" placeholder="Contexte" class="context-bar">
             <button class="send-button">Envoyer</button>
         </div>
     </main>
