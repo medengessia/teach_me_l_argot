@@ -49,9 +49,15 @@ async function search() {
         });
     } else {
         const currentLang = document.documentElement.lang;
-        resultList.innerHTML = currentLang === "fr"
-        ? "<li>Aucun résultat trouvé</li>"
-        : "<li>No result found</li>";
+        if (currentLang === "fr") {
+            resultList.innerHTML = "<li>Aucun résultat trouvé</li>";
+        }
+        else if (currentLang === "en") {
+            resultList.innerHTML = "<li>No result found</li>";
+        }
+        else {
+            resultList.innerHTML = "<li>結果は見つかりませんでした</li>";
+        }
     }
 }   
 
