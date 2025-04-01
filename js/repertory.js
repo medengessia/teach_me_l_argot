@@ -37,27 +37,6 @@ fetch('list3.html')
         attachSearchFunctionality();
 });
 
-fetch('list4.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('container4-list').innerHTML = data;
-        attachSearchFunctionality();
-});
-
-fetch('list5.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('container5-list').innerHTML = data;
-        attachSearchFunctionality();
-});
-
-fetch('list6.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('container6-list').innerHTML = data;
-        attachSearchFunctionality();
-});
-
 async function changeLanguage() {
     var lang = document.getElementById("lang").value;
     window.location.href = lang;
