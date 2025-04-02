@@ -67,7 +67,12 @@ async function search() {
             resultList.innerHTML = "<li>結果は見つかりませんでした</li>";
         }
     }
-}   
+}
+
+async function goCategory() {
+    var category = document.getElementById("data-url").value;
+    window.location.href = category;
+}
 
 async function changeLanguage() {
     var lang = document.getElementById("lang").value;

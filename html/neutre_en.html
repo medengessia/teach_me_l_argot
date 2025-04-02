@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repertory</title>
+    <link rel="stylesheet" href="../css/repertory.css">
+</head>
+
+<body>
+
+    <header class="top-bar">
+        <img src="../picture/logo-transparent2.png" alt="Logo" class="logo">
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#" data-url="homepage.html" class="accueil-page">HOMEPAGE</a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <label for="lang">🌍</label>
+            <select id="lang" class="language-dropdown" onchange="changeLanguage()">
+                <option value="neutre_en.html">English</option>
+                <option value="neutre_fr.html">French</option>
+                <option value="neutre_jp.html">Japanese</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <div class="container2">
+            <h2>2. Neutral Connotation</h2>
+            <div id="container2-list"></div>
+        </div>
+    </main>
+
+    <!-- Link JavaScript -->
+    <script src="../js/repertory.js"></script>
+</body>
+</html>
